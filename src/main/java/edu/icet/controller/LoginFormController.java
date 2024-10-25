@@ -27,7 +27,7 @@ public class LoginFormController {
         User user = getLogInUser();
         if (user!=null){
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/dash_bord_form.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/dash_bord_form.fxml"));
 
                 Parent root1 = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
@@ -59,7 +59,7 @@ public class LoginFormController {
     }
     public void lblMouseClickOnAction(MouseEvent mouseEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/forgot_password_form.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/forgot_password_form.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
@@ -74,7 +74,7 @@ public class LoginFormController {
 
     public void lblRegisterMouseClickOnAction(MouseEvent mouseEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/user_registration_form.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("..u/view/user_registration_form.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
